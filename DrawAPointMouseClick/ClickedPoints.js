@@ -51,6 +51,6 @@ function click(ev, gl, canvas, a_Position) {
     var len = g_points.length;
     for (var i = 0; i < len; i += 2) {
         gl.vertexAttrib3f(a_Position, g_points[i], g_points[i + 1], 0.0);
-        gl.drawArrays(gl.g_points, 0, 1);
+        gl.drawArrays(gl.POINTS, 0, 1);
     }
 }
